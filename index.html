@@ -39,7 +39,7 @@
     <section id="hero" class="d-flex align-items-center text-center">
         <div class="container">
             <h1>Hi, I'm <span class="text-primary">BURGALAT Thomas</span></h1>
-            <h2 class="subtitle">I'm a <span id="typewriter"></span></h2>
+            <h2 class="subtitle">I'm  <span id="typewriter"></span></h2>
             <div class="mt-4">
                 <a href="#projects" class="btn btn-primary btn-lg">Discover my projects</a>
             </div>
@@ -55,7 +55,7 @@
                         <i class="bi bi-code-slash skill-icon"></i>
                         <h3 class="card-title mt-3">Backend Development</h3>
                         <p class="card-text">Building robust applications and RESTful APIs.</p>
-                        <p class="fw-bold">JPython , C++, PHP, SQL, JAVA</p>
+                        <p class="fw-bold">Python, C++, PHP, SQL, JAVA</p>
                     </div>
                 </div>
             </div>
@@ -75,7 +75,7 @@
                         <i class="bi bi-git skill-icon"></i>
                         <h3 class="card-title mt-3">Tools & Methods</h3>
                         <p class="card-text">Modern tools for efficient development workflows.</p>
-                        <p class="fw-bold">Git, Docker, Agile Methods (Scrum)</p>
+                        <p class="fw-bold">Git, Agile Methods (Scrum)</p>
                     </div>
                 </div>
             </div>
@@ -106,9 +106,23 @@
                     <div class="timeline-content card">
                         <div class="card-body">
                             <h3 class="card-title">AI-Powered Clothing Recognition App</h3>
-                            <p class="text-muted">University Project - 2024/2025</p>
-                            <p>Designed the concept and UX/UI for an AI web application to recognize clothing from images, creating wireframes and user flows.</p>
+                            <p class="text-muted">University Project - 2024/2026</p>
+                            <p>Designed the concept and UX/UI for an AI progresive web application (PWA) to recognize clothing from images to be redirected to shoping website where you can buy it.</p>
                             <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalProject2">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content card">
+                        <div class="card-body">
+                            <h3 class="card-title">Crypto wallet tracker</h3>
+                            <p class="text-muted">Personnal project - 2025/2026</p>
+                            <p>A project with diferent API to track your crypto wallet.</p>
+                            <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalProject3">
                                 View Details
                             </button>
                         </div>
@@ -171,8 +185,8 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <img src="project-image2.jpg" class="img-fluid mb-3" alt="App wireframe preview">
-                    <p><strong>Project Goal:</strong> To design the complete user experience (UX) and user interface (UI) concept for a web application that uses AI to identify clothing items from a user's image.</p>
+                    <img src="project-image2.jpg" class="img-fluid mb-3" alt="App wireframe preview">e 
+                    <p><strong>Project Goal:</strong> To design the complete user experience (UX) and user interface (UI) concept for a progresive web application (PWA) that uses AI to identify clothing items from a user's image.</p>
                     
                     <strong>Key Responsibilities:</strong>
                     <ul>
@@ -194,13 +208,42 @@
             </div>
         </div>
     </div>
+    <div class="modal fade" id="modalProject3" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+             <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Details of Crypto tracker</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="image_projetCW.png" class="img-fluid mb-3" alt="App wireframe preview">
+                    <p><strong>Project Goal:</strong>  Python program to have access to your wallet and can see crypto wallet amount.</p>
+                    
+                    <strong>Key Responsibilities:</strong>
+                    <ul>
+                        <li>Acces the adresses with APIs</li>
+                        <li>Be able to visualize the amount</li>
+                        <li>Graphics incoming.................</li>
+                    </ul>
+
+                    <p><strong>Technologies & Concepts:</strong></p>
+                    <span class="badge bg-primary">Python</span>
+                    <span class="badge bg-secondary">API</span>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="btn btn-dark" target="_blank">Not available on GitHub yet.</a>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script>
         // Typewriter effect
         new Typewriter('#typewriter', {
-            strings: ['Software Developer.', 'Second-Year IT Student.', 'Creative & Passionate.'],
+            strings: ['a Software Developer.', 'a Second-Year IT Student.', 'Creative & Passionate.','looking for an intership'],
             autoStart: true,
             loop: true,
             delay: 75,
