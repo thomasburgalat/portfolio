@@ -1,0 +1,216 @@
+/* ========== Variables & Style Général ========== */
+:root {
+    --primary-color: #00aaff; /* Un bleu électrique */
+    --dark-color: #121212;
+    --light-color: #f8f9fa;
+    --gray-color: #1e1e1e;
+}
+
+body {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    font-family: 'Space Mono', monospace;
+    padding-top: 56px; /* Pour que le contenu ne soit pas caché par la navbar */
+}
+
+h1, h2, h3, .navbar-brand {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2.8rem;
+    color:brown
+}
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0088cc;
+    border-color: #0088cc;
+    transform: translateY(-3px);
+}
+
+/* ========== Section Hero ========== */
+#hero {
+    min-height: 100vh;
+    background-color: var(--dark-color);
+}
+
+.profile-avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid var(--primary-color);
+}
+
+#hero h1 {
+    font-size: 3.5rem;
+}
+
+#hero .subtitle {
+    font-size: 1.8rem;
+    color: #ccc;
+}
+
+.typewriter-cursor {
+    color: var(--primary-color);
+}
+
+/* ========== Section Compétences ========== */
+.skill-card {
+    background-color: var(--gray-color);
+    border: 1px solid #333;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 170, 255, 0.1);
+}
+
+.skill-icon {
+    font-size: 4rem;
+    color: var(--primary-color);
+}
+
+/* ========== Section Projets (Timeline) ========== */
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: var(--primary-color);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2px;
+}
+
+.timeline-item {
+    padding: 1rem 2rem;
+    position: relative;
+    width: 50%;
+}
+
+/* Alternance des projets à gauche et à droite */
+.timeline-item:nth-child(odd) {
+    left: 0;
+    padding-right: 40px;
+    text-align: right;
+}
+
+.timeline-item:nth-child(even) {
+    left: 50%;
+    padding-left: 40px;
+}
+
+.timeline-dot {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: var(--dark-color);
+    border: 4px solid var(--primary-color);
+    top: 30px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-item:nth-child(odd) .timeline-dot {
+    right: -10px;
+}
+
+.timeline-item:nth-child(even) .timeline-dot {
+    left: -10px;
+}
+
+.timeline-content {
+    background-color: #222;
+    border: 1px solid #333;
+}
+
+/* ========== Footer & Contact ========== */
+.social-icon {
+    font-size: 2.5rem;
+    color: #fff;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: var(--primary-color);
+}
+
+/* ========== Responsive pour mobiles ========== */
+@media (max-width: 768px) {
+    .timeline::after {
+        left: 20px;
+    }
+    .timeline-item {
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 10px;
+        text-align: left !important;
+    }
+    .timeline-item:nth-child(even) {
+        left: 0;
+    }
+    .timeline-dot {
+        left: 10px !important;
+        right: auto !important;
+    }
+}
+/* ======================================= */
+/* ==   CORRECTION VISIBILITÉ DU TEXTE  == */
+/* ======================================= */
+
+/* Rendre le texte général plus blanc et lisible */
+body {
+    color: #e0e0e0; 
+}
+
+/* Rendre les titres des cartes plus vifs */
+.skill-card h3.card-title {
+    color: #ffffff;
+}
+
+/* Garder le texte de description un peu plus subtil mais lisible */
+.skill-card p.card-text {
+    color: #b0b0b0;
+}
+
+/* Faire ressortir la liste des compétences en blanc pur */
+.skill-card .fw-bold {
+    color: #ffffff;
+}
+
+/* Bonus: Améliorer la visibilité du texte dans la timeline */
+.timeline-content .card-body p {
+    color: #c5c5c5;
+}
+.card-title {
+    color:gold;
+}
+
+.text-muted {
+    color:darkgoldenrod !important;
+}
+
+.modal-body {
+    color: #000000;
+}
