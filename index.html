@@ -1,253 +1,402 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - BURGALAT Thomas</title>
+    <title>Thomas Burgalat — Developer</title>
     
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Titillium+Web:wght@600;700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:wght@500;600;700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="style.css">
 </head>
-<body data-bs-spy="scroll" data-bs-target="#navbar-main">
-
-    <nav id="navbar-main" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">Thomas</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+<body>
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="nav">
+            <a href="#" class="logo">
+                <div class="logo-icon">TB</div>
+                <span class="logo-name">Thomas Burgalat</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact" class="nav-cta">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    <li class="nav-item ms-lg-3">
-                        <a class="btn btn-primary btn-sm" href="ThomasBurgalatResume.pdf" download>Download CV</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
-    <section id="hero" class="d-flex align-items-center text-center">
-        <div class="container">
-            <h1>Hi, I'm <span class="text-primary">BURGALAT Thomas</span></h1>
-            <h2 class="subtitle">I'm  <span id="typewriter"></span></h2>
-            <div class="mt-4">
-                <a href="#projects" class="btn btn-primary btn-lg">Discover my projects</a>
-            </div>
-        </div>
-    </section>
-
-    <section id="skills" class="container py-5">
-        <h2 class="text-center mb-5">My Skills 🛠️</h2>
-        <div class="row g-4">
-            <div class="col-md-4">
-                <div class="card skill-card h-100">
-                    <div class="card-body text-center">
-                        <i class="bi bi-code-slash skill-icon"></i>
-                        <h3 class="card-title mt-3">Backend Development</h3>
-                        <p class="card-text">Building robust applications and RESTful APIs.</p>
-                        <p class="fw-bold">Python, C++, PHP, SQL, JAVA</p>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    Looking for an internship
+                </div>
+                <h1 class="hero-title">
+                    Hi, I'm <span class="hero-title-accent">Thomas Burgalat</span>
+                </h1>
+                <p class="hero-subtitle" id="typewriter-container">
+                    I'm <span id="typewriter"></span>
+                </p>
+                <p class="hero-description">
+                    Second-year IT student at IUT d'Anglet. I design and develop modern 
+                    web applications, combining clean code with polished interfaces.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>Discover my projects</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <a href="ThomasBurgalatResume.pdf" class="btn btn-ghost" download>Download CV</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">3+</span>
+                        <span class="stat-label">Projects completed</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">2</span>
+                        <span class="stat-label">Years of study</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Technologies mastered</span>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card skill-card h-100">
-                    <div class="card-body text-center">
-                        <i class="bi bi-display skill-icon"></i>
-                        <h3 class="card-title mt-3">Frontend Development</h3>
-                        <p class="card-text">Modern and responsive user interfaces.</p>
-                        <p class="fw-bold">HTML5, CSS3, JavaScript, Bootstrap</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card skill-card h-100">
-                    <div class="card-body text-center">
-                        <i class="bi bi-git skill-icon"></i>
-                        <h3 class="card-title mt-3">Tools & Methods</h3>
-                        <p class="card-text">Modern tools for efficient development workflows.</p>
-                        <p class="fw-bold">Git, Agile Methods (Scrum)</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+            <div class="hero-gradient"></div>
+        </section>
 
-    <section id="projects" class="py-5 bg-light-subtle">
-        <div class="container">
-            <h2 class="text-center mb-5">My Projects 🚀</h2>
-            <div class="timeline">
-
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content card">
-                        <div class="card-body">
-                            <h3 class="card-title">Management Database</h3>
-                            <p class="text-muted">University Project - 2024/2025</p>
-                            <p>Designed and implemented a relational database in Oracle SQL to manage a virtual village, including ERD modeling and script creation.</p>
-                            <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalProject1">
-                                View Details
-                            </button>
+        <!-- About Section -->
+        <section id="about" class="section about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-visual">
+                        <div class="about-card">
+                            <div class="about-card-icon">💻</div>
+                            <h3>Backend Development</h3>
+                            <p>Building robust applications and RESTful APIs.</p>
+                        </div>
+                        <div class="about-card">
+                            <div class="about-card-icon">🎨</div>
+                            <h3>Frontend Development</h3>
+                            <p>Modern and responsive user interfaces.</p>
+                        </div>
+                        <div class="about-card">
+                            <div class="about-card-icon">🔧</div>
+                            <h3>Tools & Methods</h3>
+                            <p>Modern tools for efficient development workflows.</p>
+                        </div>
+                    </div>
+                    <div class="about-content">
+                        <div class="section-label">About</div>
+                        <h2 class="section-title">
+                            A developer who loves bringing ideas to life.
+                        </h2>
+                        <div class="about-text">
+                            <p>
+                                Currently in my second year of BUT Informatique at IUT d'Anglet, 
+                                I'm passionate about web development and creating applications 
+                                that solve real problems.
+                            </p>
+                            <p>
+                                My journey has allowed me to work on various projects: from database 
+                                management systems and AI-powered applications to crypto tracking tools. 
+                                I particularly enjoy technical challenges that push me to learn.
+                            </p>
+                        </div>
+                        <div class="about-info">
+                            <div class="info-item">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 1 1 16 0Z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                                <span>Pau, France</span>
+                            </div>
+                            <div class="info-item">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                                    <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                                </svg>
+                                <span>BUT Informatique — IUT d'Anglet</span>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content card">
-                        <div class="card-body">
-                            <h3 class="card-title">AI-Powered Clothing Recognition App</h3>
-                            <p class="text-muted">University Project - 2024/2026</p>
-                            <p>Designed the concept and UX/UI for an AI progresive web application (PWA) to recognize clothing from images to be redirected to shoping website where you can buy it.</p>
-                            <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalProject2">
-                                View Details
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content card">
-                        <div class="card-body">
-                            <h3 class="card-title">Crypto wallet tracker</h3>
-                            <p class="text-muted">Personnal project - 2025/2026</p>
-                            <p>A project with diferent API to track your crypto wallet.</p>
-                            <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalProject3">
-                                View Details
-                            </button>
-                        </div>
-                    </div>
+        <!-- Projects Section -->
+        <section id="projects" class="section projects">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-label">Projects</div>
+                    <h2 class="section-title">My Projects 🚀</h2>
+                    <p class="section-description">
+                        A selection of academic and personal projects I've worked on.
+                    </p>
                 </div>
                 
+                <div class="projects-grid">
+                    <!-- Project 1 - Featured -->
+                    <article class="project-card project-featured">
+                        <div class="project-card-content">
+                            <div class="project-card-header">
+                                <span class="project-tag">Database</span>
+                                <span class="project-year">2024/2025</span>
+                            </div>
+                            <h3 class="project-title">Management Database</h3>
+                            <p class="project-description">
+                                Designed and implemented a relational database in Oracle SQL to manage a virtual village,
+                                including ERD modeling and script creation for schema, constraints, and relationships.
+                            </p>
+                            <ul class="project-tech">
+                                <li>Oracle SQL</li>
+                                <li>UML Modeling</li>
+                                <li>Database Design</li>
+                            </ul>
+                            <a href="https://github.com/thomasburgalat" class="project-link" target="_blank">
+                                View on GitHub
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="project-card-visual">
+                            <div class="project-mockup">
+                                <div class="mockup-header">
+                                    <span></span><span></span><span></span>
+                                </div>
+                                <div class="mockup-content">
+                                    <div class="mockup-sidebar"></div>
+                                    <div class="mockup-main">
+                                        <div class="mockup-card"></div>
+                                        <div class="mockup-card"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card">
+                        <div class="project-card-header">
+                            <span class="project-tag">PWA / AI</span>
+                            <span class="project-year">2024/2025</span>
+                        </div>
+                        <h3 class="project-title">AI Clothing Recognition App</h3>
+                        <p class="project-description">
+                            Designed the UX/UI concept for an AI-powered PWA that recognizes 
+                            clothing from images and redirects to shopping websites.
+                        </p>
+                        <ul class="project-tech">
+                            <li>UI/UX Design</li>
+                            <li>Figma</li>
+                            <li>AI Concepts</li>
+                        </ul>
+                        <a href="#" class="project-link" target="_blank">
+                            View on Figma
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                            </svg>
+                        </a>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card">
+                        <div class="project-card-header">
+                            <span class="project-tag">Personal Project</span>
+                            <span class="project-year">2025</span>
+                        </div>
+                        <h3 class="project-title">Crypto Wallet Tracker</h3>
+                        <p class="project-description">
+                            Python program using different APIs to track your crypto wallet 
+                            and visualize amounts. Graphics feature coming soon.
+                        </p>
+                        <ul class="project-tech">
+                            <li>Python</li>
+                            <li>REST API</li>
+                            <li>Data Visualization</li>
+                        </ul>
+                        <a href="https://github.com/thomasburgalat" class="project-link" target="_blank">
+                            Coming soon
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                            </svg>
+                        </a>
+                    </article>
+                </div>
+
+                <div class="projects-cta">
+                    <a href="https://github.com/thomasburgalat" class="btn btn-secondary" target="_blank">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                        </svg>
+                        View all projects on GitHub
+                    </a>
+                </div>
             </div>
-        </div>
-    </section>
-    
-    <footer id="contact" class="bg-dark text-white text-center py-5">
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section skills">
+            <div class="container">
+                <div class="section-header centered">
+                    <div class="section-label">Skills</div>
+                    <h2 class="section-title">My Skills 🛠️</h2>
+                </div>
+                
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <div class="skill-category-header">
+                            <div class="skill-category-icon backend">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="16 18 22 12 16 6"/>
+                                    <polyline points="8 6 2 12 8 18"/>
+                                </svg>
+                            </div>
+                            <h3>Backend</h3>
+                        </div>
+                        <div class="skill-list">
+                            <span class="skill-item">Python</span>
+                            <span class="skill-item">Java</span>
+                            <span class="skill-item">C++</span>
+                            <span class="skill-item">PHP</span>
+                            <span class="skill-item">SQL</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <div class="skill-category-header">
+                            <div class="skill-category-icon frontend">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="3" width="20" height="14" rx="2"/>
+                                    <line x1="8" y1="21" x2="16" y2="21"/>
+                                    <line x1="12" y1="17" x2="12" y2="21"/>
+                                </svg>
+                            </div>
+                            <h3>Frontend</h3>
+                        </div>
+                        <div class="skill-list">
+                            <span class="skill-item">HTML5</span>
+                            <span class="skill-item">CSS3</span>
+                            <span class="skill-item">JavaScript</span>
+                            <span class="skill-item">Bootstrap</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <div class="skill-category-header">
+                            <div class="skill-category-icon database">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <ellipse cx="12" cy="5" rx="9" ry="3"/>
+                                    <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
+                                    <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+                                </svg>
+                            </div>
+                            <h3>Database</h3>
+                        </div>
+                        <div class="skill-list">
+                            <span class="skill-item">Oracle SQL</span>
+                            <span class="skill-item">MySQL</span>
+                            <span class="skill-item">UML Modeling</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <div class="skill-category-header">
+                            <div class="skill-category-icon tools">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                                </svg>
+                            </div>
+                            <h3>Tools & Methods</h3>
+                        </div>
+                        <div class="skill-list">
+                            <span class="skill-item">Git</span>
+                            <span class="skill-item">GitHub</span>
+                            <span class="skill-item">Agile / Scrum</span>
+                            <span class="skill-item">Figma</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="contact-content">
+                        <div class="section-label">Contact</div>
+                        <h2 class="contact-title">
+                            Let's Get In Touch<br>
+                            <span>Feel free to reach out!</span>
+                        </h2>
+                        <p class="contact-description">
+                            I'm currently looking for an internship opportunity. 
+                            Don't hesitate to contact me to discuss your projects or opportunities.
+                        </p>
+                    </div>
+                    <div class="contact-card">
+                        <a href="mailto:thomasburgalat@gmail.com" class="contact-email-card">
+                            <div class="email-icon">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="4" width="20" height="16" rx="2"/>
+                                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                                </svg>
+                            </div>
+                            <div class="email-content">
+                                <span class="email-label">Email</span>
+                                <span class="email-address">thomasburgalat@gmail.com</span>
+                            </div>
+                            <svg class="email-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                            </svg>
+                        </a>
+                        <div class="contact-socials">
+                            <a href="https://github.com/thomasburgalat" target="_blank" class="social-btn">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                                </svg>
+                                GitHub
+                            </a>
+                            <a href="https://linkedin.com/in/thomas-burgalat" target="_blank" class="social-btn">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                </svg>
+                                LinkedIn
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
         <div class="container">
-            <h2>Let's Get In Touch</h2>
-            <p class="lead">I'm currently looking for an internship. Feel free to contact me!</p>
-            <div class="social-links mt-4">
-                <a href="mailto:thomasburgalat@gmail.com" class="social-icon"><i class="bi bi-envelope-fill"></i></a>
-                <a href="https://github.com/thomasburgalat" target="_blank" class="social-icon"><i class="bi bi-github"></i></a>
-                <a href="https://linkedin.com/in/thomas-burgalat" target="_blank" class="social-icon"><i class="bi bi-linkedin"></i></a>
+            <div class="footer-content">
+                <p>© 2025 Thomas Burgalat</p>
+                <p>Designed & Built with ❤️</p>
             </div>
-            <p class="mt-4 text-white-50">© 2025 - BURGALAT Thomas</p>
         </div>
     </footer>
 
-    <div class="modal fade" id="modalProject1" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Details of Management Database</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <img src="project-image1.jpg" class="img-fluid mb-3" alt="Database ERD preview">
-                    <p><strong>Project Goal:</strong> To design and implement a complete relational database in Oracle SQL for managing the data of a virtual village.</p>
-                    
-                    <strong>Key Responsibilities:</strong>
-                    <ul>
-                        <li>Modeled entity-relationship diagrams (UML) to define the database structure.</li>
-                        <li>Wrote SQL scripts for schema creation, including tables, constraints, and relationships.</li>
-                        <li>Developed queries to insert, retrieve, and manage data while ensuring integrity.</li>
-                    </ul>
-
-                    <p><strong>Technologies used:</strong></p>
-                    <span class="badge bg-primary">Oracle SQL</span>
-                    <span class="badge bg-secondary">UML Modeling</span>
-                    <span class="badge bg-info">Database Design</span>
-                </div>
-                <div class="modal-footer">
-                    <a href="#" class="btn btn-dark" target="_blank">View Code on GitHub</a>
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <div class="modal fade" id="modalProject2" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-             <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Details of AI Clothing Recognition App</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <img src="project-image2.jpg" class="img-fluid mb-3" alt="App wireframe preview">e 
-                    <p><strong>Project Goal:</strong> To design the complete user experience (UX) and user interface (UI) concept for a progresive web application (PWA) that uses AI to identify clothing items from a user's image.</p>
-                    
-                    <strong>Key Responsibilities:</strong>
-                    <ul>
-                        <li>Created detailed wireframes and mockups for all application screens.</li>
-                        <li>Designed user flows for key features like image upload, real-time analysis, and result visualization.</li>
-                        <li>Focused on creating an intuitive and seamless user journey from start to finish.</li>
-                    </ul>
-
-                    <p><strong>Technologies & Concepts:</strong></p>
-                    <span class="badge bg-primary">UI/UX Design</span>
-                    <span class="badge bg-secondary">Wireframing</span>
-                    <span class="badge bg-info">AI Concepts</span>
-                    <span class="badge bg-dark">Figma (example tool)</span>
-                </div>
-                <div class="modal-footer">
-                    <a href="#" class="btn btn-dark" target="_blank">View Design on Figma</a>
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="modalProject3" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-             <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Details of Crypto tracker</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <img src="image_projetCW.png" class="img-fluid mb-3" alt="App wireframe preview">
-                    <p><strong>Project Goal:</strong>  Python program to have access to your wallet and can see crypto wallet amount.</p>
-                    
-                    <strong>Key Responsibilities:</strong>
-                    <ul>
-                        <li>Acces the adresses with APIs</li>
-                        <li>Be able to visualize the amount</li>
-                        <li>Graphics incoming.................</li>
-                    </ul>
-
-                    <p><strong>Technologies & Concepts:</strong></p>
-                    <span class="badge bg-primary">Python</span>
-                    <span class="badge bg-secondary">API</span>
-                </div>
-                <div class="modal-footer">
-                    <a href="#" class="btn btn-dark" target="_blank">Not available on GitHub yet.</a>
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-    <script>
-        // Typewriter effect
-        new Typewriter('#typewriter', {
-            strings: ['a Software Developer.', 'a Second-Year IT Student.', 'Creative & Passionate.','looking for an intership'],
-            autoStart: true,
-            loop: true,
-            delay: 75,
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
